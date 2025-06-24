@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css문법</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        /* * = 전체 선택자
+            전체 선택자에는 영역값을 준다.
+            프로젝트에서는 사용하지 않음. */
+
+        h1 {
+            color: cadetblue;
+            font-size: 50px;
+        }
+
+        /* 스타일의 주석으로 내용을 적으면 됩니다. */
+
+        #id_select {
+            background: violet;
+        }
+
+        p>.color_change {
+            color: aqua;
+        }
+        /* 자식 선택자 */
+
+        article > div > .color_change {
+            color: brown;
+        }
+
+        article .color_change {
+            background: blueviolet;
+        }
+        /* 후손 선택자 */
+
+        .front_end_lang + li {
+            background-color: aqua;
+        }
+        /* 형제 선택자
+            ~: 밑의 모두 / +: 밑의 하나 */
+
+        .p_tag, #span_tag, h3 {
+            background: yellowgreen;
+        }
+        /* 그룹 선택자 */
+    </style>
+</head>
+
+<body>
+    <h1>클래스 문법 실습</h1>
+    <!--  -->
+    <h2 id="id_select">아이디 선택자</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li class="front_end_lang">Javascript</li>
+        <li>React</li>
+        <li>Vue</li>
+    </ul>
+
+    <p>
+        나는 이렇게 글을 쓰다가
+        <span class="color_change">이 부분만 색을 변경</span>
+        하고 싶어요~~
+    </p>
+    <article>
+        <div>
+            나는 이렇게 글을 쓰다가
+            <span class="color_change">이 부분만 색을 변경</span>
+            하고 싶어요~~
+        </div>
+    </article>
+    <article>
+        <div>
+            나는 이렇게 글을 쓰다가
+            <span class="color_change">이 부분만 색을 변경</span>
+            하고 싶어요~~
+        </div>
+    </article>
+
+    <div>
+        <p class="p_tag">p태그</p>
+        <h3>헤딩3</h3>
+        <span id="span_tag">span태그</span>
+    </div>
+</body>
+
+</html>
