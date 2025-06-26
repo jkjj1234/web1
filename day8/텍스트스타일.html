@@ -20,7 +20,7 @@
             font-family: 'TheTuesdayofYounah';
         } */
 
-        .gamja-flower-regular {
+        /* .gamja-flower-regular {
             font-family: "Gamja Flower", sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -28,7 +28,17 @@
 
         body {
             font-family: "Gamja Flower", sans-serif;
-        }s
+        } */
+
+        @font-face {
+            font-family: '온글잎 콘콘체';
+            src: url('./온글잎\ 콘콘체.ttf');
+        }
+        /* 실제로는 폰트를 다운받아서 사용!! */
+
+        body {
+            font-family: '온글잎 콘콘체';
+        }
 
         h1 {
             color: violet;
@@ -101,6 +111,15 @@
         .line_height2 {
             line-height: 500%;
         }
+
+        .letter_spacing_1 {
+            letter-spacing: 10px;
+        }
+
+        .letter_spacing_2 {
+            letter-spacing: -10px;
+        }
+        /* 자간 : - 수치도 입력된다. */
     </style>
 </head>
 
@@ -137,6 +156,9 @@
         mollitia dolorem voluptate atque similique!</p>
     <p class="line_height2">line-height 실습</p>
     <p class="line_height3">line-height 실습</p>
+
+    <p class="letter_spacing_1">자간을 설정합니다.</p>
+    <p class="letter_spacing_2">자간을 설정합니다.</p>
 </body>
 
 </html>
