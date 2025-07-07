@@ -1,23 +1,89 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>댓글</title>
+    <script src="https://kit.fontawesome.com/cfc754b008.js" crossorigin="anonymous"></script>
+    <style>
+        .container {
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
+        }
+
+        .box {
+            display: flex;
+            gap: 30px;
+        }
+
+        img {
+            border-radius: 100%;
+        }
+
+        h2 {
+            margin: 0;
+            padding-top: 5px;
+        }
+
+        p {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .icon_list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .dot_icon {
+            margin: 0;
+            padding-top: 10px;
+        }
+
+        .repaly_icon {
+            margin: 0;
+            padding: 30px 130px;
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-        <img src="" alt="">
+    <div class="container">
+        <div class="box">
+            <div>
+                <img src="./유튜브이미지.jpg" alt="">
+            </div>
+
+            <div class="text">
+                <h2>닉네임</h2>
+                <p>댓글내용</p>
+                <ul class="icon_list">
+                    <li>
+                        <i class="fa-regular fa-thumbs-up fa-xl"></i>
+                    </li>
+                    <li>좋아요_숫자</li>
+                    <li>
+                        <i class="fa-regular fa-thumbs-down fa-flip-horizontal fa-xl"></i>
+                    </li>
+                    <li>답글</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="dot_icon">
+            <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+        </div>
     </div>
 
-    <div>
-        <h2>닉네임</h2>
-        <p>댓글내용</p>
-        <ul>
-            <li>숫자</li>
-            <li>숫자</li>
-            <li>답글</li>
-        </ul>
-    </div> 
+    <div class="repaly_icon">
+        <i class="fa-solid fa-angle-right fa-rotate-90 fa-xl"></i>
+        답글 n개
+    </div>
 </body>
+
 </html>
