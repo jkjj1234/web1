@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>가상요소이펙트2</title>
     <style>
-        body {
+         body {
             background: rgb(33, 33, 71);
         }
 
@@ -23,41 +23,16 @@
             text-decoration: none;
             color: #fff;
             font-size: 24px;
-            padding: 16px 50px;
+            padding: 10px 20px;
             position: relative;
         }
 
         .menu_hover_effect a::before {
             content: "";
-            width: 100%;
             display: block;
             position: absolute;
-            top: 0;
-            left: 0;
             background-color: #fff;
-            height: 1px;
-            transition: 0.5s;
         }
-
-        .menu_hover_effect a::after {
-            content: "";
-            width: 1px;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: #fff;
-            height: 100%;
-            transition: 0.5s;
-        }
-
-        /* .menu_hover_effect a:hover::before {
-            top: 100%;
-        }
-
-        .menu_hover_effect a:hover::after {
-            height: 100%;
-        } */
     </style>
 </head>
 <body>
