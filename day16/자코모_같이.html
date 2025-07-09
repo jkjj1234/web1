@@ -19,41 +19,52 @@
             width: 100%;
             height: 800px;
             position: relative;
+            overflow: hidden;
+            /* 피규어 영역 이상을 넘어가면 보이지 않게 처리 */
         }
 
         img {
             width: 100%;
             height: 800px;
+            transition: 0.7s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
         }
 
         .text_box {
             color: #fff;
-            /* text-align: center; */
+            text-align: center;
             position: absolute;
-            bottom
+            bottom: 50px;
             left: 50%;
-            transform: translateX(-50%)
+            transform: translateX(-50%);
+        }
+
+        h2 {
+            font-size: 48px;
         }
     </style>
 </head>
 <body>
     <section>
         <figure>
-            <img src="" alt="">
+            <img src="./가죽.jpg" alt="">
             <div class="text_box">
                 <h2>Leather</h2>
                 <p>프리미엄가죽</p>
             </div>
         </figure>
         <figure>
-            <img src="" alt="">
+            <img src="./패브릭.jpg" alt="">
             <div class="text_box">
                 <h2>Fabric</h2>
                 <p>기능성 페브릭</p>
             </div>
         </figure>
         <figure>
-            <img src="" alt="">
+            <img src="./material.jpg" alt="">
             <div class="text_box">
                 <h2>Material</h2>
                 <p>올바른 내장재</p>
