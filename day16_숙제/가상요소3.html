@@ -6,21 +6,85 @@
     <title>가상요소3</title>
     <style>
         body {
-            background: rgb(14, 124, 168);
+            background: #38aeb0;
         }
 
         ul {
             display: flex;
             list-style: none;
-            gap: 50px;
+            gap: 40px;
+            text-align: center;
+            /* padding: 15px 50px; */
+            /* width: 50px; */
         }
 
         a {
             color: #fff;
             text-decoration: none;
-            font-size: 30px;
-            display: block;
+            margin: 0;
+            padding: 16px 100px;
+            position: relative;
+            
         }
+
+        a::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            margin-bottom: 16px;
+            transition: 0.3s;
+        }
+
+        a::after {
+            content: "";
+            width: 0%;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            margin-top: 16px;
+            /* transition: 0.3s */
+        }
+
+        a:hover::before {
+            height: 5px;
+        }
+
+        a:hover::before,
+        a:hover::after {
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        span:nth-child(1) {
+            font-size: 26px;
+        }
+
+        span:nth-child(2) {
+            font-size: 22px;
+            opacity: 0;
+            color: #113e3e;
+            font-weight: 350;
+        }
+
+        span:nth-child(2)::before {
+            content: "";
+            display: block;
+            padding: 10px 0;
+        }
+
+        span:nth-child(2)::after {
+            content: "";
+            display: block;
+            padding: 5px 0;
+        }
+
+        a:hover span:nth-child(2) {
+            opacity: 1;
+            transition: 0.25s;
+        }
+
     </style>
 </head>
 <body>
@@ -34,25 +98,25 @@
         <li>
             <a href="#">
                 <span>CSS</span>
-                <span></span>
+                <span>STYLE</span>
             </a>
         </li>
         <li>
             <a href="#">
                 <span>JAVASCRIPT</span>
-                <span></span>
+                <span>CODING</span>
             </a>
         </li>
         <li>
             <a href="#">
                 <span>UXUI DESIGN</span>
-                <span></span>
+                <span>DESIGN</span>
             </a>
         </li>
         <li>
             <a href="#">
                 <span>PORTFOLIO</span>
-                <span></span>
+                <span>PROJECT</span>
             </a>
         </li>
     </ul>
